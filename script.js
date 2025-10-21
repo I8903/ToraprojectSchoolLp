@@ -11,7 +11,7 @@
                     io.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.2 });
+        }, { threshold: 0.7 });
         io.observe(target);
     });
 }
@@ -27,7 +27,7 @@
                     io.unobserve(entry.target); // 一度だけ実行
                 }
             });
-        }, { threshold: 0.2 });
+        }, { threshold: 0.7 });
 
         targets.forEach(target => io.observe(target));
     });
@@ -44,7 +44,7 @@
                     io.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.2 });
+        }, { threshold: 0.7 });
 
         targets.forEach(target => io.observe(target));
     });
