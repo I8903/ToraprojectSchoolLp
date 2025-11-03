@@ -31,10 +31,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- CSS・JS読み込み -->
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animation.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -536,6 +536,31 @@
             </p>
         </div>
     </footer>
+
+    <!-- ▼ CATS：サンクスページ“以外”の全ページ用タグ -->
+    <script>
+        (function () {
+            if (document.getElementById("ck_p1590c70d36m6f61")) return; // 2重読み込み防止
+
+            var organic_cid = "";
+            var can_organic_search = "off";
+            var can_chatbot = "off";
+            var cats_options = { fpc_id: "" };
+
+            var a = document.createElement("script");
+            a.src = "//palm-e.ac01.l-ad.net/ck/p1590c70d36m6f61/cookie.js";
+            a.id = "ck_p1590c70d36m6f61";
+            a.addEventListener("load", function () {
+                // 未読込時エラー防止
+                if (typeof CATS_GroupCreate === "function") {
+                    CATS_GroupCreate(47, "p1590c70d36m6f61", organic_cid, can_organic_search, can_chatbot, cats_options);
+                }
+            });
+            document.body.appendChild(a);
+        })();
+    </script>
+    <!-- ▲ CATS：サンクスページ“以外”の全ページ用タグ -->
+
 </body>
 
 </html>
